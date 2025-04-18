@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subhash's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #dbe6f6, #c5796d);
+      color: #333;
+    }
+
+    nav {
+      background-color: #343a40;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #f1f5f9;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #374151;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 1.5rem;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      flex: 1 1 300px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact, footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div><strong>Subhash</strong></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#internships">Internships</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/22pa5a0418" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/pikkili-venkata-naga-sai-subhash-55873b25b/" target="_blank">LinkedIn</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Pikkili Venkata Naga Sai Subhash</h1>
+  <p>B.Tech in ECE | Embedded Systems | Web Developer | PCB & IoT Enthusiast</p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p style="text-align: center; max-width: 800px; margin: auto;">
+    I’m Subhash, a curious and passionate learner pursuing B.Tech in Electronics and Communication Engineering at Vishnu Institute of Technology. I'm skilled in PCB design, automation, and full-stack development. I aim to apply my technical knowledge to solve real-world problems.
+  </p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>B.Tech - ECE</h3>
+      <p>Vishnu Institute of Technology, 2022-2025<br>CGPA: 7.61</p>
+    </div>
+    <div class="card">
+      <h3>Diploma - ECE</h3>
+      <p>Rise Krishna Sai Polytechnic, 2019-2022<br>Percentage: 92.6%</p>
+    </div>
+    <div class="card">
+      <h3>SSC</h3>
+      <p>A.P Model School, Darsi, 2019<br>GPA: 9.0</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">Java (Basics)</div>
+    <div class="card">Python (Basics)</div>
+    <div class="card">SQL</div>
+    <div class="card">HTML & CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">Node.js</div>
+    <div class="card">Snowflake</div>
+    <div class="card">Redshift</div>
+    <div class="card">PCB Design</div>
+    <div class="card">Microprocessor & Microcontroller</div>
+  </div>
+</section>
+
+<section id="internships">
+  <h2>Internships</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Embedded Systems Internship</h3>
+      <p>Worked on current meter design using PCB and ICs at SRILIN.</p>
+    </div>
+    <div class="card">
+      <h3>Blue Prism (AWS Academy)</h3>
+      <p>Completed a virtual internship focused on intelligent automation using Blue Prism.</p>
+    </div>
+    <div class="card">
+      <h3>AWS Data Analytics</h3>
+      <p>Explored cloud-based analytics services, data pipelines, and visualization techniques.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Storage Integration</h3>
+      <p>Automated data loading between Redshift and Snowflake using Snowpipe.</p>
+    </div>
+    <div class="card">
+      <h3>Current Meter Design</h3>
+      <p>Developed current measuring devices during an internship at SRILIN using PCB and ICs.</p>
+    </div>
+    <div class="card">
+      <h3>Oral Cancer Detection</h3>
+      <p>Used K-Means Clustering and YOLO for image-based disease detection.</p>
+    </div>
+    <div class="card">
+      <h3>Travel Blog</h3>
+      <p>Created a full-stack travel blog site using HTML, CSS, Node.js, Express, and Firebase.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Email: pvnss1648@gmail.com</p>
+  <p>Phone: +91 7207071256</p>
+</section>
+
+<footer>
+  © 2025 Subhash. All rights reserved.
+</footer>
+
+</body>
+</html>
